@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Knowledge Resources</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234fc3f7'><path d='M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4l7 3.82 7-3.82v-4L12 17l-7-3.82z'/></svg>">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="brand-title">
+        <span>Resources</span>
+        <span class="nav-count-badge">22</span>
+      </a>
+    </div>
+
+    <!-- Real-time Filter Search -->
+    <div class="nav-search">
+      <input type="text" id="search-input" placeholder="Search resources..." autocomplete="off" spellcheck="false">
+      <button id="search-clear-btn" class="search-clear-btn" style="display: none;">✕</button>
+    </div>
+
+    <div class="nav-actions">
+      <!-- Theme Switch (Dark/Light) -->
+      <button id="theme-toggle-btn" class="btn-toggle" title="Toggle Theme">
+        <span id="theme-icon">◐</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN HEADING -->
+  <h1>General Knowledge Resources</h1>
+  <p class="subtitle">A curated index of 22 foundational masterworks across science, philosophy, economics, and history.</p>
+
+  <!-- TABLE OF CONTENTS (matching mlresources-main .toc pattern) -->
+  <div class="toc" id="toc-container">
+    <h3>Table of Contents</h3>
+    <ul id="toc-list">
+      <li><a href="#philosophy">Philosophy & Cognitive Science</a> <span class="toc-count">(5)</span></li>
+      <li><a href="#business">Business, Economics & Startups</a> <span class="toc-count">(4)</span></li>
+      <li><a href="#essays">Master Essays & Narrative</a> <span class="toc-count">(4)</span></li>
+      <li><a href="#archives">Historical & Legal Archives</a> <span class="toc-count">(3)</span></li>
+      <li><a href="#research">Research Tools & Learning Methods</a> <span class="toc-count">(4)</span></li>
+      <li><a href="#technology">Technology & Cybersecurity</a> <span class="toc-count">(2)</span></li>
+    </ul>
+  </div>
+
+  <!-- CONTAINER FOR CATEGORY SECTIONS -->
+  <main id="sections-container">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- EMPTY SEARCH STATE -->
+  <div id="empty-state" class="empty-results" style="display: none;">
+    <p>No resources found matching your search.</p>
+    <button id="reset-search-btn" class="btn-toggle">Clear Search</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>General Knowledge Resource Library &bull; 22 Open-Access Masterworks</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
